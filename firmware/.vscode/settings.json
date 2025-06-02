@@ -1,0 +1,17 @@
+{
+    "[c]": {
+        "editor.codeActionsOnSave": [
+            "source.fixAll",
+        ],
+    },
+    "editor.insertSpaces": true,
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+    "files.associations": {
+        "system.h": "c",
+        "xc.h": "c",
+        "pic18.h": "c",
+        "pic18_chip_select.h": "c",
+        "lcd.h": "c",
+        "stdint.h": "c"
+    }
+}
