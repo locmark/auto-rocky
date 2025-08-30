@@ -169,45 +169,25 @@
 #define LCD_D6_SetAnalogMode()      do { ANSELAbits.ANSELA5 = 1; } while(0)
 #define LCD_D6_SetDigitalMode()     do { ANSELAbits.ANSELA5 = 0; } while(0)
 
-// get/set RA6 aliases
-#define IO_RA6_TRIS                 TRISAbits.TRISA6
-#define IO_RA6_LAT                  LATAbits.LATA6
-#define IO_RA6_PORT                 PORTAbits.RA6
-#define IO_RA6_WPU                  WPUAbits.WPUA6
-#define IO_RA6_OD                   ODCONAbits.ODCA6
-#define IO_RA6_ANS                  ANSELAbits.ANSELA6
-#define IO_RA6_SetHigh()            do { LATAbits.LATA6 = 1; } while(0)
-#define IO_RA6_SetLow()             do { LATAbits.LATA6 = 0; } while(0)
-#define IO_RA6_Toggle()             do { LATAbits.LATA6 = ~LATAbits.LATA6; } while(0)
-#define IO_RA6_GetValue()           PORTAbits.RA6
-#define IO_RA6_SetDigitalInput()    do { TRISAbits.TRISA6 = 1; } while(0)
-#define IO_RA6_SetDigitalOutput()   do { TRISAbits.TRISA6 = 0; } while(0)
-#define IO_RA6_SetPullup()          do { WPUAbits.WPUA6 = 1; } while(0)
-#define IO_RA6_ResetPullup()        do { WPUAbits.WPUA6 = 0; } while(0)
-#define IO_RA6_SetPushPull()        do { ODCONAbits.ODCA6 = 0; } while(0)
-#define IO_RA6_SetOpenDrain()       do { ODCONAbits.ODCA6 = 1; } while(0)
-#define IO_RA6_SetAnalogMode()      do { ANSELAbits.ANSELA6 = 1; } while(0)
-#define IO_RA6_SetDigitalMode()     do { ANSELAbits.ANSELA6 = 0; } while(0)
-
 // get/set RA7 aliases
-#define LCD_D7_TRIS                 TRISAbits.TRISA7
-#define LCD_D7_LAT                  LATAbits.LATA7
-#define LCD_D7_PORT                 PORTAbits.RA7
-#define LCD_D7_WPU                  WPUAbits.WPUA7
-#define LCD_D7_OD                   ODCONAbits.ODCA7
-#define LCD_D7_ANS                  ANSELAbits.ANSELA7
-#define LCD_D7_SetHigh()            do { LATAbits.LATA7 = 1; } while(0)
-#define LCD_D7_SetLow()             do { LATAbits.LATA7 = 0; } while(0)
-#define LCD_D7_Toggle()             do { LATAbits.LATA7 = ~LATAbits.LATA7; } while(0)
-#define LCD_D7_GetValue()           PORTAbits.RA7
-#define LCD_D7_SetDigitalInput()    do { TRISAbits.TRISA7 = 1; } while(0)
-#define LCD_D7_SetDigitalOutput()   do { TRISAbits.TRISA7 = 0; } while(0)
-#define LCD_D7_SetPullup()          do { WPUAbits.WPUA7 = 1; } while(0)
-#define LCD_D7_ResetPullup()        do { WPUAbits.WPUA7 = 0; } while(0)
-#define LCD_D7_SetPushPull()        do { ODCONAbits.ODCA7 = 0; } while(0)
-#define LCD_D7_SetOpenDrain()       do { ODCONAbits.ODCA7 = 1; } while(0)
-#define LCD_D7_SetAnalogMode()      do { ANSELAbits.ANSELA7 = 1; } while(0)
-#define LCD_D7_SetDigitalMode()     do { ANSELAbits.ANSELA7 = 0; } while(0)
+#define LCD_D7_olc_TRIS                 TRISAbits.TRISA7
+#define LCD_D7_olc_LAT                  LATAbits.LATA7
+#define LCD_D7_olc_PORT                 PORTAbits.RA7
+#define LCD_D7_olc_WPU                  WPUAbits.WPUA7
+#define LCD_D7_olc_OD                   ODCONAbits.ODCA7
+#define LCD_D7_olc_ANS                  ANSELAbits.ANSELA7
+#define LCD_D7_olc_SetHigh()            do { LATAbits.LATA7 = 1; } while(0)
+#define LCD_D7_olc_SetLow()             do { LATAbits.LATA7 = 0; } while(0)
+#define LCD_D7_olc_Toggle()             do { LATAbits.LATA7 = ~LATAbits.LATA7; } while(0)
+#define LCD_D7_olc_GetValue()           PORTAbits.RA7
+#define LCD_D7_olc_SetDigitalInput()    do { TRISAbits.TRISA7 = 1; } while(0)
+#define LCD_D7_olc_SetDigitalOutput()   do { TRISAbits.TRISA7 = 0; } while(0)
+#define LCD_D7_olc_SetPullup()          do { WPUAbits.WPUA7 = 1; } while(0)
+#define LCD_D7_olc_ResetPullup()        do { WPUAbits.WPUA7 = 0; } while(0)
+#define LCD_D7_olc_SetPushPull()        do { ODCONAbits.ODCA7 = 0; } while(0)
+#define LCD_D7_olc_SetOpenDrain()       do { ODCONAbits.ODCA7 = 1; } while(0)
+#define LCD_D7_olc_SetAnalogMode()      do { ANSELAbits.ANSELA7 = 1; } while(0)
+#define LCD_D7_olc_SetDigitalMode()     do { ANSELAbits.ANSELA7 = 0; } while(0)
 
 // get/set RB0 aliases
 #define USER_BTN_TRIS                 TRISBbits.TRISB0
@@ -348,6 +328,26 @@
 #define LCD_LED_ON_SetOpenDrain()       do { ODCONCbits.ODCC0 = 1; } while(0)
 #define LCD_LED_ON_SetAnalogMode()      do { ANSELCbits.ANSELC0 = 1; } while(0)
 #define LCD_LED_ON_SetDigitalMode()     do { ANSELCbits.ANSELC0 = 0; } while(0)
+
+// get/set RC1 aliases
+#define LCD_D7_TRIS                 TRISCbits.TRISC1
+#define LCD_D7_LAT                  LATCbits.LATC1
+#define LCD_D7_PORT                 PORTCbits.RC1
+#define LCD_D7_WPU                  WPUCbits.WPUC1
+#define LCD_D7_OD                   ODCONCbits.ODCC1
+#define LCD_D7_ANS                  ANSELCbits.ANSELC1
+#define LCD_D7_SetHigh()            do { LATCbits.LATC1 = 1; } while(0)
+#define LCD_D7_SetLow()             do { LATCbits.LATC1 = 0; } while(0)
+#define LCD_D7_Toggle()             do { LATCbits.LATC1 = ~LATCbits.LATC1; } while(0)
+#define LCD_D7_GetValue()           PORTCbits.RC1
+#define LCD_D7_SetDigitalInput()    do { TRISCbits.TRISC1 = 1; } while(0)
+#define LCD_D7_SetDigitalOutput()   do { TRISCbits.TRISC1 = 0; } while(0)
+#define LCD_D7_SetPullup()          do { WPUCbits.WPUC1 = 1; } while(0)
+#define LCD_D7_ResetPullup()        do { WPUCbits.WPUC1 = 0; } while(0)
+#define LCD_D7_SetPushPull()        do { ODCONCbits.ODCC1 = 0; } while(0)
+#define LCD_D7_SetOpenDrain()       do { ODCONCbits.ODCC1 = 1; } while(0)
+#define LCD_D7_SetAnalogMode()      do { ANSELCbits.ANSELC1 = 1; } while(0)
+#define LCD_D7_SetDigitalMode()     do { ANSELCbits.ANSELC1 = 0; } while(0)
 
 // get/set RC2 aliases
 #define IO_RC2_TRIS                 TRISCbits.TRISC2

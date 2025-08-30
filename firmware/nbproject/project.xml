@@ -10,6 +10,7 @@
             <make-dep-projects/>
             <sourceRootList>
                 <sourceRootElem>lcd</sourceRootElem>
+                <sourceRootElem>weightSensor</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

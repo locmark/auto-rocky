@@ -21,6 +21,7 @@
         </logicalFolder>
       </logicalFolder>
       <itemPath>lcd/lcd.h</itemPath>
+      <itemPath>weightSensor/weightSensor.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -55,10 +56,12 @@
       </logicalFolder>
       <itemPath>main.c</itemPath>
       <itemPath>lcd/lcd.c</itemPath>
+      <itemPath>weightSensor/weightSensor.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
     <Elem>lcd</Elem>
+    <Elem>weightSensor</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -197,6 +200,7 @@
         <property key="event.recorder.debugger.behavior" value="Running"/>
         <property key="event.recorder.enabled" value="false"/>
         <property key="event.recorder.scvd.files" value=""/>
+        <property key="firmware.download.all" value="false"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
         <property key="lastid" value=""/>
         <property key="memories.aux" value="false"/>
