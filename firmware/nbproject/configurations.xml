@@ -22,6 +22,7 @@
       </logicalFolder>
       <itemPath>lcd/lcd.h</itemPath>
       <itemPath>weightSensor/weightSensor.h</itemPath>
+      <itemPath>lcd/interface.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -57,6 +58,7 @@
       <itemPath>main.c</itemPath>
       <itemPath>lcd/lcd.c</itemPath>
       <itemPath>weightSensor/weightSensor.c</itemPath>
+      <itemPath>lcd/interface.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -216,7 +218,7 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-ffff"/>
-        <property key="poweroptions.powerenable" value="false"/>
+        <property key="poweroptions.powerenable" value="true"/>
         <property key="programmertogo.imagename" value=""/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
@@ -234,7 +236,7 @@
         <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
         <property key="programoptions.usehighvoltageonmclr" value="false"/>
         <property key="programoptions.uselvpprogramming" value="false"/>
-        <property key="voltagevalue" value="5.0"/>
+        <property key="voltagevalue" value="4.25"/>
       </PICkit3PlatformTool>
       <Tool>
         <property key="AutoSelectMemRanges" value="auto"/>
@@ -265,7 +267,7 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-ffff"/>
-        <property key="poweroptions.powerenable" value="false"/>
+        <property key="poweroptions.powerenable" value="true"/>
         <property key="programmertogo.imagename" value=""/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
@@ -283,7 +285,7 @@
         <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
         <property key="programoptions.usehighvoltageonmclr" value="false"/>
         <property key="programoptions.uselvpprogramming" value="false"/>
-        <property key="voltagevalue" value="5.0"/>
+        <property key="voltagevalue" value="4.25"/>
       </Tool>
       <XC8-CO>
         <property key="coverage-enable" value=""/>

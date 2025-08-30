@@ -12,7 +12,9 @@ static const float gain = 128;
 
 static const float scaleFactor = maxLoadKg / (maxReadingValue * cellSensitivityVoltPerVolt * gain * 2);
 
-float WeightSensor_reading = 0;
+int32_t WeightSensor_reading_g_x10 = 0;
+
+static int32_t offset_g_x10 = 200;
 
 static uint32_t rawReading = 0;
 
@@ -57,5 +59,9 @@ void WeightSensor_Update(void) {
 
     const float reading = (float)interpret24bitAsInt32(rawReading);
     const float weight = reading * scaleFactor;
-    WeightSensor_reading = weight;
+    WeightSensor_reading_g_x10 = -weight * 10000 - offset_g_x10;
+}
+
+void WeightSensor_SetOffset(int32_t weight_g_x10) {
+    offset_g_x10 = weight_g_x10;
 }

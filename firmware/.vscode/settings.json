@@ -13,6 +13,8 @@
         "pic18_chip_select.h": "c",
         "lcd.h": "c",
         "stdint.h": "c",
-        "weightsensor.h": "c"
+        "weightsensor.h": "c",
+        "interface.h": "c",
+        "pins.h": "c"
     }
 }
