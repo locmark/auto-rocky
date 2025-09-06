@@ -95,6 +95,7 @@ void PIN_MANAGER_Initialize(void)
     PPS registers
     */
     U1RXPPS = 0x13; //RC3->UART1:RX1;
+    INT0PPS = 0xA; //RB2->INTERRUPT MANAGER:INT0;
     RC2PPS = 0x13;  //RC2->UART1:TX1;
 
    /**

@@ -23,6 +23,7 @@
       <itemPath>lcd/lcd.h</itemPath>
       <itemPath>weightSensor/weightSensor.h</itemPath>
       <itemPath>lcd/interface.h</itemPath>
+      <itemPath>encoder/encoder.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -59,11 +60,13 @@
       <itemPath>lcd/lcd.c</itemPath>
       <itemPath>weightSensor/weightSensor.c</itemPath>
       <itemPath>lcd/interface.c</itemPath>
+      <itemPath>encoder/encoder.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
     <Elem>lcd</Elem>
     <Elem>weightSensor</Elem>
+    <Elem>encoder</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>

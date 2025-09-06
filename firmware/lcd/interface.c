@@ -1,5 +1,7 @@
 #include "interface.h"
 
+#include <stdio.h>
+#include <stdint.h>
 #include "../weightSensor/weightSensor.h"
 
 static char line1[15];
@@ -40,9 +42,9 @@ void UI_Update(void) {
     cleanLines();
 
     snprintf(line1, sizeof(line1), "auto grinder");
-    printWeight(WeightSensor_reading_g_x10, line2, sizeof(line2));
+    printWeight(current_weight_g_x10, line2, sizeof(line2));
     line2[5] = '/';
-    printWeight(180, line2 + 6, sizeof(line2) - 6);
+    printWeight(target_weight_g_x10, line2 + 6, sizeof(line2) - 6);
 
     drawLines();
 }
